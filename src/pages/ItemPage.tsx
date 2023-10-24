@@ -1,6 +1,7 @@
 import { useRoute } from "@react-navigation/native";
-import { SafeAreaView, View, StyleSheet, StatusBar } from "react-native";
+import { SafeAreaView, StyleSheet, StatusBar } from "react-native";
 import { NavigatorStackRouteProp } from "./RouteParams";
+import Animated from "react-native-reanimated";
 
 const ItemPage = () => {
   const {
@@ -8,9 +9,10 @@ const ItemPage = () => {
   } = useRoute<NavigatorStackRouteProp<"ItemPage">>();
   return (
     <SafeAreaView style={styles.container}>
-      <View
-        style={{ backgroundColor: color, height: 150, width: "100%" }}
-      ></View>
+      <Animated.View
+        style={{ backgroundColor: color, height: 150, width: "100%", top: 0 }}
+        sharedTransitionTag={id}
+      ></Animated.View>
     </SafeAreaView>
   );
 };

@@ -13,8 +13,16 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="GridPage">
-        <Stack.Screen name="GridPage" component={GridPage} />
-        <Stack.Screen name="ItemPage" component={ItemPage} />
+        <Stack.Screen
+          name="GridPage"
+          component={GridPage}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="ItemPage"
+          component={ItemPage}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

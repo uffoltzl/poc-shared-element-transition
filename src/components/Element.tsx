@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
-import { Pressable, View } from "react-native";
+import { Pressable } from "react-native";
+import Animated from "react-native-reanimated";
 
 interface Props {
   id: string;
@@ -9,8 +10,11 @@ interface Props {
 
 export const Element: FunctionComponent<Props> = ({ id, color, onPress }) => {
   return (
-    <View style={{ height: 100, width: 100, backgroundColor: color }}>
-      <Pressable onPress={onPress} />
-    </View>
+    <Animated.View sharedTransitionTag={id}>
+      <Pressable
+        onPress={onPress}
+        style={{ height: 100, width: 100, backgroundColor: color }}
+      />
+    </Animated.View>
   );
 };
