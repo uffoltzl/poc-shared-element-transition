@@ -16,11 +16,13 @@ export default function App() {
         <Stack.Screen
           name="GridPage"
           component={GridPage}
-          options={{ headerShown: false }}
+          options={{ title: "Grid" }}
         />
         <Stack.Screen
           name="ItemPage"
           component={ItemPage}
+          // TODO: header overlap component
+          // options={({ route }) => ({ title: `Item ${route.params.id}` })}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
