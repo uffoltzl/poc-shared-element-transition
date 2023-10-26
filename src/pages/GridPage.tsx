@@ -18,12 +18,15 @@ export const GridPage = () => {
       <FlatList
         data={DATA}
         numColumns={3}
-        renderItem={({ item }) => (
-          <Element
-            id={item.id}
-            color={item.color}
-            onPress={() => navigate("ItemPage", item)}
-          />
+        renderItem={({ item, index }) => (
+          <>
+            <Element
+              id={item.id}
+              color={item.color}
+              onPress={() => navigate("ItemPage", item)}
+            />
+            {index !== DATA.length - 1 ? <View style={{ width: 8 }} /> : null}
+          </>
         )}
         ListHeaderComponent={() => <View style={{ height: 40 }} />}
         ItemSeparatorComponent={() => <View style={{ height: 8 }} />}

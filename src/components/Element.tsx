@@ -13,7 +13,12 @@ export const Element: FunctionComponent<Props> = ({ id, color, onPress }) => {
     <Animated.View sharedTransitionTag={id}>
       <Pressable
         onPress={onPress}
-        style={{ height: 100, width: 100, backgroundColor: color }}
+        style={{
+          height: 100,
+          width: 100,
+          backgroundColor: color,
+          borderRadius: 12,
+        }}
       />
     </Animated.View>
   );

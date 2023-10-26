@@ -1,38 +1,38 @@
 export const DATA = [
   {
-    id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
-    color: "violet",
+    id: "1",
+    color: "#e3342f",
   },
   {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
-    color: "red",
+    id: "2",
+    color: "#f6993f",
   },
   {
-    id: "58694a0f-3da1-471f-bd96-145571e29d72",
-    color: "blue",
+    id: "3",
+    color: "#ffed4a",
   },
   {
-    id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28be",
-    color: "green",
+    id: "4",
+    color: "#38c172",
   },
   {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f6e",
-    color: "black",
+    id: "5",
+    color: "#4dc0b5",
   },
   {
-    id: "58694a0f-3da1-471f-bd96-145571e29d7e",
-    color: "yellow",
+    id: "6",
+    color: "#3490dc",
   },
   {
-    id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28bz",
-    color: "brown",
+    id: "7",
+    color: "#6574cd",
   },
   {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f6z",
-    color: "pink",
+    id: "8",
+    color: "#9561e2",
   },
   {
-    id: "58694a0f-3da1-471f-bd96-145571e29d7z",
-    color: "cyan",
+    id: "9",
+    color: "#f66d9b",
   },
 ];

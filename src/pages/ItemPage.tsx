@@ -10,7 +10,7 @@ const ItemPage = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Animated.View
-        style={{ backgroundColor: color, height: 150, width: "100%", top: 0 }}
+        style={{ backgroundColor: color, height: 200, width: "100%" }}
         sharedTransitionTag={id}
       ></Animated.View>
     </SafeAreaView>
